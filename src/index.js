@@ -7,3 +7,8 @@ const markup = menu.reduce((acc, dish) => {
 }, '');
 const container = document.querySelector('.js-menu');
 container.insertAdjacentHTML('afterbegin', markup);
+
+const Theme = {
+  LIGHT: 'light-theme',
+  DARK: 'dark-theme',
+};

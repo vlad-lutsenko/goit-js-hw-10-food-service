@@ -23,11 +23,11 @@ const themeMaker = function() {
     body.classList.remove(Theme.LIGHT);
     body.classList.add(Theme.DARK);
     localStorage.setItem('Theme', Theme.DARK);
-  } else {
-    body.classList.remove(Theme.DARK);
-    body.classList.add(Theme.LIGHT);
-    localStorage.setItem('Theme', Theme.LIGHT);
+    return;
   }
+  body.classList.remove(Theme.DARK);
+  body.classList.add(Theme.LIGHT);
+  localStorage.setItem('Theme', Theme.LIGHT);
 };
 
 const pointerPossitioning = function() {
